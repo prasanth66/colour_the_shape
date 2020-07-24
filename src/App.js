@@ -3,7 +3,7 @@ import ColoursContainer from './components/ColoursContainer';
 import KiteComponent from './components/GameComponents/KiteComponent'
 import PopupComponent from './components/PopupComponent';
 import StarComponent from './components/GameComponents/StarComponent';
-
+import PaintBrush from './images/paintBrush.svg';
 
 import './App.css';
 
@@ -24,6 +24,7 @@ class App extends React.Component {
 
 // This method will be sent to the child component
 handler(colour) {
+console.log(PaintBrush)
   this.setState({
     colour: colour
   });
