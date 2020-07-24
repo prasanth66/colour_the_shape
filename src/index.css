@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  
+}
+
+.popup-container{
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  border: 2px solid yellow;
+}
+
+#play-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+ 
+}
+.button{
+  height: 30px;
+  width: 70px;
+
+  border: 4px solid cyan;
+}
+
+.button:hover{
+  transform: scale(1.2);
+}
+.container{
+  height: 80vh;
+  width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 5%;
+  border: 2px solid black;
+  background-image: url(https://i.pinimg.com/originals/14/e7/b1/14e7b161c01386ee120ce7e043341144.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+/* css for colourscomponent */
+.colours-container{
+ height: 64vh;
+ width: 10vw;
+ margin-top: 10vh;
+ 
+ background-image: linear-gradient(to bottom right, cyan , grey);
+ border: 2px solid white;
+ border-radius: 5%;
+ margin-left: 2px;
+  
+}
+/* css for colourcard */
+.colour-card{
+  
+   height: 5vh;
+   width: 4.5vw;
+   border: 2px solid grey;
+   text-align: center;
+   font-size: 1.2vw;
+   font-weight: bolder;
+   margin-top: 1vh;
+   margin-left: 0.8vw;
+}
+
+.color{
+  height: 5vh;
+  width: 3vw;
+ border-radius: 50%;
+ margin-top: 1vh;
+ margin-left: 0.5vw;
+ border: 3px solid grey;
+}
+
+/* css for game component */
+.game-component{
+  margin: -75vh 11vw;
+  height: 500px;
+  width: 500px;
+  box-shadow: 0 0 10px 5px white;
+  background-image: url(https://i.pinimg.com/originals/ef/48/d2/ef48d217dc8e23a49277afc4dcf403c3.png);
+  
+}
+
+.svg-container{
+  
+  cursor: pointer;
+  height: 68vh;
+  width: 35vw;
+}
+
+.option-container{
+  height: 50vh;
+  width: 10vw;
+ 
+  margin-top: -45vh;
+  margin-left: 38vw;
+  text-align: center;
+ 
+  
+}
+
+.star-component{
+  margin: 5vh 25vw;
+  height: 450px;
+  width: 450px;
+  box-shadow: 10px 5px 8px 5px #888888;
+}
