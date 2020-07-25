@@ -3,7 +3,6 @@ import ColoursContainer from './components/ColoursContainer';
 import KiteComponent from './components/GameComponents/KiteComponent'
 import PopupComponent from './components/PopupComponent';
 import StarComponent from './components/GameComponents/StarComponent';
-import PaintBrush from './images/paintBrush.svg';
 
 import './App.css';
 
@@ -24,7 +23,7 @@ class App extends React.Component {
 
 // This method will be sent to the child component
 handler(colour) {
-console.log(PaintBrush)
+  
   this.setState({
     colour: colour
   });
@@ -49,15 +48,13 @@ levelHandler(picture){
        
         {(() => {
         switch (this.state.picture) {
-          case "kite":   return <KiteComponent colour = {this.state.colour}  picture = {this.levelHandler}/>;
+          case "kite":   return <KiteComponent  colour = {this.state.colour}  picture = {this.levelHandler}/>;
           case "star":   return <StarComponent colour = {this.state.colour}  picture = {this.levelHandler}/>;
           default: {return <PopupComponent picture = {this.levelHandler} />};
         
         }
       })()}
-            {/* <ColoursContainer colour = {this.handler} />
-            <GameComponent colour = {this.state.colour} />
-            <OptionComponent/> */}
+            
         </div>
        
            

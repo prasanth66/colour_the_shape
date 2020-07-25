@@ -1,5 +1,5 @@
 import React from 'react';
-import OptionComponent from '../OptionComponent';
+import KiteOptionComponent from '../OptionComponent/KiteOptionComponent';
 import Tick from '../../images/tick.svg';
 import Wrong from '../../images/wrong.svg';
 
@@ -194,11 +194,11 @@ class KiteComponent extends React.Component{
          }
 
          if(colourNumbers[(this.sixteen_16.current.innerHTML)-1]===this.sixteen.current.getAttribute('fill')){
-            this.sixteen_16.current.setAttribute('href',Tick);
+            this.sixteen16.current.setAttribute('href',Tick);
          }
          else{
              check=false;
-             this.sixteen_16.current.setAttribute('href',Wrong);
+             this.sixteen16.current.setAttribute('href',Wrong);
          }
 
          if(colourNumbers[(this.seventeen_17.current.innerHTML)-1]===this.seventeen.current.getAttribute('fill')){
@@ -408,7 +408,7 @@ class KiteComponent extends React.Component{
            
                  </svg>
                  
-                 <OptionComponent/>
+                 <KiteOptionComponent/>
             </div>
             
             

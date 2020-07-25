@@ -1,6 +1,6 @@
 import React from 'react';
 
-class OptionComponent extends React.Component{
+class KiteOptionComponent extends React.Component{
     render(){
         return(
             <div className='option-container'>
@@ -11,4 +11,4 @@ class OptionComponent extends React.Component{
     }
 }
 
-export default OptionComponent;
+export default KiteOptionComponent;
