@@ -13,7 +13,10 @@ body {
   height: 50%;
   width: 50%;
   margin: auto;
-  border: 2px solid yellow;
+  color: white;
+  background-image: url(https://cdna.artstation.com/p/assets/images/images/013/579/568/large/timothy-seow-c-wood-texture.jpg?1540249337);
+  background-size: cover;
+  box-shadow: 0 0 10px 10px black;
 }
 
 #play-buttons{
@@ -25,13 +28,18 @@ body {
 .button{
   height: 30px;
   width: 70px;
-
-  border: 4px solid cyan;
+background-color: black;
+  animation: btn 2s linear infinite alternate;
 }
 
-.button:hover{
+@keyframes btn{
+  from {transform: scale(1);color: cyan;}
+  to { transform: scale(1.5); color: yellowgreen;}
+}
+
+/* .button:hover{
   transform: scale(1.2);
-}
+} */
 .container{
   height: 80vh;
   width: 60vw;
@@ -40,7 +48,7 @@ body {
   margin: auto;
   margin-top: 5%;
   border: 2px solid black;
-  background-image: url(https://i.pinimg.com/originals/14/e7/b1/14e7b161c01386ee120ce7e043341144.jpg);
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/61zB3h2Z7ZL._AC_SL1307_.jpg);
   background-repeat: no-repeat;
   background-size: cover;
  
@@ -56,7 +64,8 @@ body {
  border: 2px solid white;
  border-radius: 5%;
  margin-left: 2px;
-
+background-image: url(https://graphicriver.img.customer.envatousercontent.com/files/240992165/ad_081_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=168e1d945a9c901f462c05dbf785b25a);
+  background-size: cover;
   
 }
 /* css for colourcard */
@@ -81,6 +90,12 @@ body {
  margin-top: 1vh;
  margin-left: 0.5vw;
  border: 3px solid grey;
+ animation: rotate 2s ease-in-out infinite alternate;
+}
+
+@keyframes rotate{
+  from {transform: rotateY(0deg);}
+  to { transform:  rotateY(45deg); }
 }
 
 /* css for game component */
@@ -88,7 +103,9 @@ body {
   margin: -75vh 11vw;
   height: 76vh;
   width: 37vw;
-  box-shadow: 0 0 10px 5px white;
+  
+  background-size: cover;
+  /* background-image: url(https://image.freepik.com/free-vector/seashore-landscape-cartoon_18591-45366.jpg); */
   /* background-image: url(https://i.pinimg.com/originals/ef/48/d2/ef48d217dc8e23a49277afc4dcf403c3.png); */
   cursor:url(./images/paintBrush.svg), pointer;
 }
@@ -107,7 +124,6 @@ body {
   margin-top: -45vh;
   margin-left: 38vw;
   text-align: center;
- 
   
 }
 

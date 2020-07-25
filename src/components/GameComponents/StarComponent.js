@@ -248,7 +248,7 @@ class StarComponent extends React.Component{
         return(
             <div className=' game-component '>
                  
-            <button onClick={()=>this.checkAnswer()} style={{marginLeft:'15vw',marginTop:10,marginBottom:10}}>Check</button>
+            <button  className='button' onClick={()=>this.checkAnswer()} style={{marginLeft:'15vw',marginTop:10,marginBottom:10}}>Check</button>
                  <svg viewBox="0 0 100 100" className='svg-container'>
                 
                  <svg style={{fontSize:5}} onMouseOver={()=>this.removeText(this.one_1)} onMouseOut={()=>this.addText(this.one_1)}>
