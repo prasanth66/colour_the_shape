@@ -12,7 +12,8 @@ body {
 .popup-container{
   height: 50%;
   width: 50%;
-  margin: auto;
+  margin-top: -60vh;
+  margin-left: 16vw;
   color: white;
   background-image: url(https://cdna.artstation.com/p/assets/images/images/013/579/568/large/timothy-seow-c-wood-texture.jpg?1540249337);
   background-size: cover;
@@ -33,8 +34,8 @@ background-color: black;
 }
 
 @keyframes btn{
-  from {transform: scale(1);color: cyan;}
-  to { transform: scale(1.5); color: yellowgreen;}
+  from {transform: scale(1);color: white;}
+  to { transform: scale(1.5); color: lime;}
 }
 
 /* .button:hover{
@@ -103,10 +104,6 @@ background-image: url(https://graphicriver.img.customer.envatousercontent.com/fi
   margin: -75vh 11vw;
   height: 76vh;
   width: 37vw;
-  
-  background-size: cover;
-  /* background-image: url(https://image.freepik.com/free-vector/seashore-landscape-cartoon_18591-45366.jpg); */
-  /* background-image: url(https://i.pinimg.com/originals/ef/48/d2/ef48d217dc8e23a49277afc4dcf403c3.png); */
   cursor:url(./images/paintBrush.svg), pointer;
 }
 
@@ -118,7 +115,7 @@ background-image: url(https://graphicriver.img.customer.envatousercontent.com/fi
 }
 
 .option-container{
-  height: 50vh;
+  height: 45vh;
   width: 10vw;
  
   margin-top: -45vh;
@@ -126,5 +123,21 @@ background-image: url(https://graphicriver.img.customer.envatousercontent.com/fi
   text-align: center;
   
 }
+
+.instruction-container{
+  height: 30vh;
+  width: 14vw;
+  border: 2px solid black;
+  text-align: center;
+  margin-left: 35vw;
+  color: black;
+  background-image: url(https://i.pinimg.com/originals/c1/7b/44/c17b44a9921065dc2a988653e148b115.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-weight: bold;
+  
+}
+
 
 

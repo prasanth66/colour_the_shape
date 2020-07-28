@@ -223,7 +223,7 @@ class StarComponent extends React.Component{
       
 
       if(check){
-          this.props.picture('kite')
+          this.props.picture('castle')
       }
 
     }
@@ -350,7 +350,7 @@ class StarComponent extends React.Component{
                </svg>
 
 
-             {/* drawing */}
+            
 
              <image ref={this.one1} href='' height="5" width="5" x="95%" y="27%"/>
              <image ref={this.two2} href=''height="5" width="5" x="45%" y="30%"/>
