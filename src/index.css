@@ -12,8 +12,7 @@ body {
 .popup-container{
   height: 50%;
   width: 50%;
-  margin-top: -60vh;
-  margin-left: 16vw;
+  margin: auto;
   color: white;
   background-image: url(https://cdna.artstation.com/p/assets/images/images/013/579/568/large/timothy-seow-c-wood-texture.jpg?1540249337);
   background-size: cover;
@@ -29,18 +28,10 @@ body {
 .button{
   height: 30px;
   width: 70px;
-background-color: black;
-  animation: btn 2s linear infinite alternate;
+
 }
 
-@keyframes btn{
-  from {transform: scale(1);color: white;}
-  to { transform: scale(1.5); color: lime;}
-}
 
-/* .button:hover{
-  transform: scale(1.2);
-} */
 .container{
   height: 80vh;
   width: 60vw;
@@ -61,12 +52,12 @@ background-color: black;
  width: 10vw;
  margin-top: 10vh;
  
- background-image: linear-gradient(to bottom right, cyan , grey);
+
  border: 2px solid white;
  border-radius: 5%;
  margin-left: 2px;
-background-image: url(https://graphicriver.img.customer.envatousercontent.com/files/240992165/ad_081_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=168e1d945a9c901f462c05dbf785b25a);
-  background-size: cover;
+
+background-size: cover;
   
 }
 /* css for colourcard */
@@ -91,13 +82,10 @@ background-image: url(https://graphicriver.img.customer.envatousercontent.com/fi
  margin-top: 1vh;
  margin-left: 0.5vw;
  border: 3px solid grey;
- animation: rotate 2s ease-in-out infinite alternate;
+
 }
 
-@keyframes rotate{
-  from {transform: rotateY(0deg);}
-  to { transform:  rotateY(45deg); }
-}
+
 
 /* css for game component */
 .game-component{
@@ -125,19 +113,11 @@ background-image: url(https://graphicriver.img.customer.envatousercontent.com/fi
 }
 
 .instruction-container{
-  height: 30vh;
-  width: 14vw;
-  border: 2px solid black;
+  
   text-align: center;
-  margin-left: 35vw;
-  color: black;
-  background-image: url(https://i.pinimg.com/originals/c1/7b/44/c17b44a9921065dc2a988653e148b115.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-weight: bold;
   
 }
+
 
 
 

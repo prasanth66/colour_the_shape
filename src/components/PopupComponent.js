@@ -24,8 +24,8 @@ class PopupComponent extends React.Component{
                 <p style={{textAlign:'center'}}>Have fun with colors as you practice your number recognition skills. Identify the number and use the color key to colour the picture</p>
              
               <div id='play-buttons'>
-              <button className='button'onClick = {()=>this.props.picture('star')} onMouseOver={()=>this.soundPlay(Play)}>Play</button>
-               <button className='button'>Exit</button>
+              <button style={{backgroundColor:'green'}} className='button'onClick = {()=>this.props.picture('star')} onMouseOver={()=>this.soundPlay(Play)}>Play</button>
+               <button style={{backgroundColor:'red'}} className='button'>Exit</button>
               </div>
               
             </div>
