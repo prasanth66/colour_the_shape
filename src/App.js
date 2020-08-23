@@ -49,7 +49,7 @@ levelHandler(picture){
          
 
         <ColoursContainer colour = {this.handler}  />
-        <InstructionComponent/>
+       
        
         {(() => {
         switch (this.state.picture) {
@@ -60,7 +60,7 @@ levelHandler(picture){
         
         }
       })()}
-            
+             <InstructionComponent  />
         </div>
        
            

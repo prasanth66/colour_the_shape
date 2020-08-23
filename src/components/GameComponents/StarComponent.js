@@ -4,12 +4,14 @@ import Tick from '../../images/tick.svg';
 import Wrong from '../../images/wrong.svg';
 
 
+
 let colourNumbers=['blue','yellow'];
 class StarComponent extends React.Component{
 
     constructor(props) {
         super(props);
-    
+        this.congragulation =  React.createRef();
+
         this.one = React.createRef();
         this.two = React.createRef();
         this.three = React.createRef();
@@ -223,7 +225,9 @@ class StarComponent extends React.Component{
       
 
       if(check){
-          this.props.picture('castle')
+        this.congragulation.current.style.display='block'
+        console.log( this.congragulation.current.style.display)
+        //   this.props.picture('castle')
       }
 
     }
@@ -248,7 +252,7 @@ class StarComponent extends React.Component{
         return(
             <div className=' game-component '>
                  
-            <button  className='button' onClick={()=>this.checkAnswer()} style={{marginLeft:'15vw',marginTop:10,marginBottom:10}}>Check</button>
+            
                  <svg viewBox="0 0 100 100" className='svg-container'>
                 
                  <svg style={{fontSize:5}} onMouseOver={()=>this.removeText(this.one_1)} onMouseOut={()=>this.addText(this.one_1)}>
@@ -373,9 +377,16 @@ class StarComponent extends React.Component{
              <image ref={this.ninteen19} href='' height="5" width="5" x="50%" y="60%"/>
             
                 </svg>
+               
+                <button  className='button' onClick={()=>this.checkAnswer()} style={{marginLeft:'15vw',marginTop:'0'}}>Check</button>
+              
                 <StarOptionComponent/>
-
+               <div ref={this.congragulation} className='congragulation'>
+                 <button className='congo-btn'>Play Again</button>
+                 <button className='congo-btn'>Next</button>
+               </div>
           </div>
+          
         )
     }
 }

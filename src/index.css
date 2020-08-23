@@ -53,7 +53,7 @@ body {
  margin-top: 10vh;
  
 
- border: 2px solid white;
+ 
  border-radius: 5%;
  margin-left: 2px;
 
@@ -81,7 +81,6 @@ background-size: cover;
  border-radius: 50%;
  margin-top: 1vh;
  margin-left: 0.5vw;
- border: 3px solid grey;
 
 }
 
@@ -89,10 +88,11 @@ background-size: cover;
 
 /* css for game component */
 .game-component{
-  margin: -75vh 11vw;
+  margin: -72vh 11vw;
   height: 76vh;
   width: 37vw;
   cursor:url(./images/paintBrush.svg), pointer;
+ 
 }
 
 .svg-container{
@@ -118,6 +118,23 @@ background-size: cover;
   
 }
 
+.congragulation{
+height: 500px;
+width: 600px;
 
+ margin-top: -78vh;
+ z-index: 100;
+ background-image: url(./images/congragulations.gif);
+ position: absolute;
+ border-radius: 50px;
+ background-size: cover;
+ display: none;
+ animation: cong 3s ease-in-out;
+}
+
+@keyframes cong {
+  from{margin-top: -100%;transform: rotateZ(0deg);}
+  to{margin-top: -33%;transform: rotateY(360deg);}
+}
 
 

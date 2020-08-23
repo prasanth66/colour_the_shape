@@ -279,7 +279,7 @@ class CastleComponent extends React.Component{
     render(){
         return(
             <div className='game-component '>
-              <button  className='button' onClick={()=>this.checkAnswer()} style={{marginLeft:'15vw',marginTop:10,marginBottom:10}}>Check</button>
+              
                  <svg  viewBox="0 0 100 100" className='svg-container'>
              
              <svg style={{fontSize:5}}  onMouseOver={()=>this.removeText(this.one_1)} onMouseOut={()=>this.addText(this.one_1)}>
@@ -442,6 +442,8 @@ class CastleComponent extends React.Component{
            
                 </svg>
                 <CastleOptionComponent/>
+                <button  className='button' onClick={()=>this.checkAnswer()}>Check</button>
+                
           </div>
         )
     }
